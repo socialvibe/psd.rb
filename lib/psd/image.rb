@@ -12,7 +12,7 @@ class PSD
     alias :has_mask? :has_mask
 
     # All of the possible compression formats Photoshop uses.
-    COMPRESSIONS = [
+    COMPRESSIONS ||= [
       'Raw',
       'RLE',
       'ZIP',

@@ -11,7 +11,7 @@ class PSD
     include BuildPreview
 
     # Default properties that all nodes contain
-    PROPERTIES = [:name, :left, :right, :top, :bottom, :height, :width]
+    PROPERTIES ||= [:name, :left, :right, :top, :bottom, :height, :width]
 
     attr_accessor :parent, :children, :layer, :force_visible, :top, :left
 
