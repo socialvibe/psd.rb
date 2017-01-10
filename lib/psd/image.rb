@@ -23,7 +23,7 @@ class PSD
     def_delegators :@header, :height, :width, :channels, :depth, :mode
 
     # All of the possible compression formats Photoshop uses.
-    COMPRESSIONS = [
+    COMPRESSIONS ||= [
       'Raw',
       'RLE',
       'ZIP',

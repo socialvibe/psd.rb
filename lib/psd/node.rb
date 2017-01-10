@@ -19,7 +19,7 @@ class PSD
       include Locking
 
       # Default properties that all nodes contain
-      PROPERTIES = [:name, :left, :right, :top, :bottom, :height, :width]
+      PROPERTIES ||= [:name, :left, :right, :top, :bottom, :height, :width]
 
       attr_reader :id, :name, :parent
       attr_accessor :children, :layer, :force_visible, :top_offset, :left_offset
